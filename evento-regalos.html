@@ -11,9 +11,9 @@
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <div id="navbar-root"></div>
-<main class="flex-1 max-w-5xl mx-auto w-full px-4 py-8 space-y-12">
+<main class="flex-1">
 <!-- Hero Section -->
-<section class="relative overflow-hidden rounded-xl h-[400px]">
+<section class="relative overflow-hidden h-[400px]">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Pareca de recién casados caminando en un jardín soleado" style="background-image: linear-gradient(0deg, rgba(17, 33, 24, 0.8) 0%, rgba(17, 33, 24, 0.2) 50%, rgba(0, 0, 0, 0) 100%), url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDbI0ZsCO-uGANviG3PfUfubRPtvgXTT5KIgOKZDME8yg-ScUVKHhUDwGocbUggZlzVhv-UoFPcXgOXTVduvFPCB2S1z_K56foBIlEippNNDpAe8SLqjKBwFRP6HpQxw1oJ6g3o6AT2BqisRhlZiMCyuc60J4Em9itePGNyUFqN_8RJHZZp4K81qbMdU-luB6ecvgviV8PGLjZfdBpTLz7ZQsCNDs6O3TBOUCoUol-09yVkG2QpR6C5jrx2X6Ne468ouAZTHAMSh2EL&quot;);">
 </div>
 <div class="absolute bottom-0 left-0 p-8 md:p-12 space-y-2">
@@ -23,7 +23,8 @@
 </div>
 </section>
 <!-- Event Details Section (Itinerary & Dress Code) -->
-<section class="grid md:grid-cols-2 gap-12 pt-8" id="evento">
+<section class="pt-8" id="evento">
+<div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 <div class="space-y-6">
 <div>
 <h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-2" style="">Itinerario</h2>
@@ -105,7 +106,8 @@
 </div>
 </section>
 <!-- Map Section (Positioned after Itinerary) -->
-<section class="space-y-6" id="mapa">
+<section class="py-12 bg-white dark:bg-background-dark/50" id="mapa">
+<div class="max-w-5xl mx-auto px-6 space-y-6">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
 <div class="space-y-2">
 <h2 class="text-primary font-bold uppercase tracking-widest text-sm" style="">Ubicación</h2>
@@ -148,9 +150,11 @@
 </div>
 </div>
 </div>
+</div>
 </section>
 <!-- Gifts Section (Positioned last) -->
-<section class="space-y-6 pt-8" id="regalos">
+<section class="py-12" id="regalos">
+<div class="max-w-5xl mx-auto px-6 space-y-6 pt-8">
 <div class="text-center space-y-2">
 <h2 class="text-primary font-bold uppercase tracking-widest text-sm" style="">Regalos</h2>
 <h3 class="text-3xl font-black text-slate-900 dark:text-slate-100" style="">Mesa de Regalos</h3>
@@ -175,6 +179,7 @@
 </div>
 <span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors" style="">arrow_forward</span>
 </a>
+</div>
 </div>
 </section>
 </main>

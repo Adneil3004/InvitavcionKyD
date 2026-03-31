@@ -12,10 +12,10 @@ const setupMusic = () => {
   audioInstance = new Audio(musicPath);
   audioInstance.loop = true;
   
-  // Crear botón flotante (TOP-RIGHT para más visibilidad)
+  // Crear botón flotante (Reposicionado para evitar solapes en móviles)
   const musicBtn = document.createElement('button');
   musicBtn.id = 'music-control';
-  musicBtn.className = 'fixed top-4 right-20 md:right-32 z-[100] bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-3 rounded-full shadow-lg border border-primary/20 text-primary hover:scale-110 transition-all duration-300 group ring-4 ring-primary/5';
+  musicBtn.className = 'fixed bottom-4 right-4 md:bottom-auto md:top-4 md:right-32 z-[100] bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-3 rounded-full shadow-lg border border-primary/20 text-primary hover:scale-110 transition-all duration-300 group ring-4 ring-primary/5';
   musicBtn.innerHTML = `
     <div class="relative flex items-center justify-center">
       <!-- Icono de play con pulso si está pausado -->
