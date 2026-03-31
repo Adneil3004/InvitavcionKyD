@@ -29,7 +29,7 @@ export const initRouter = (onPageChange) => {
       const currentMain = document.querySelector('main');
       
       if (newMain && currentMain) {
-        currentMain.innerHTML = newMain.innerHTML;
+        currentMain.replaceWith(newMain);
         // Actualizar el título de la página
         document.title = doc.title;
         // Navegar en el historial
