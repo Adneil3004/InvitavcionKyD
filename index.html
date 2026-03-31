@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Daniel &amp; Katia | Nuestra Boda</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div id="navbar-root"></div>
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative h-screen w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
+                    data-alt="Romantic couple walking in a sunlit garden"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmIz6Qi2Kuzxhk-tmeJO0xwHFS-zKKC98LCIrDr1Kx3XLqTEXTgVNke2BdY89LBCHn3KK4NZiZcPjTqx0wh38kEdmoKP7T6ukif2-MIKXy46PK5hnidMJr9-CtXuWGOBsUxef-a61cTXahfBbj12_tAOABQHhaz7ByVkefGFKf5j-IRI7eyUwuy1OgIJOjol5pYoCnsaH3zQ4t-qEuCoUeHOanq5eKyB7AeZgYjI9xdSMn7IfOMRv_K5EueQjO16bPRmGbRQUA_ZOH");'>
+                </div>
+                <div class="relative h-full flex flex-col items-center justify-center px-4 text-center">
+                    <div class="space-y-6 max-w-3xl">
+                        <span class="inline-block text-white/90 text-sm font-bold uppercase tracking-[0.3em] mb-4">Estás
+                            invitado</span>
+                        <h1 class="text-white text-6xl md:text-8xl font-extrabold leading-none tracking-tight">
+                            Daniel <span class="text-primary font-light">&amp;</span> Katia
+                        </h1>
+                        <div class="h-px w-24 bg-primary mx-auto my-8"></div>
+                        <h2 class="text-white text-xl md:text-2xl font-light leading-relaxed tracking-wide">
+                            ¡Nos casamos! <br class="md:hidden" /> 15 de Julio de 2024 • Barcelona
+                        </h2>
+                        <div class="pt-10 flex flex-col md:flex-row gap-4 justify-center items-center">
+                        </div>
+                    </div>
+                    <!-- Scroll Down Indicator -->
+                    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/60">
+                        <span
+                            class="material-symbols-outlined text-3xl animate-bounce">keyboard_double_arrow_down</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Countdown/Intro Section -->
+            <section class="py-24 bg-white dark:bg-background-dark/50" id="historia">
+                <div class="mx-auto max-w-4xl px-6 text-center">
+                    <span class="text-primary text-sm font-bold uppercase tracking-widest mb-4 block">Nuestra
+                        Historia</span>
+                    <h3 class="text-slate-900 dark:text-slate-100 text-3xl md:text-4xl font-bold mb-6">El comienzo de
+                        algo maravilloso</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-12">
+                        Después de años de risas, viajes y momentos compartidos, hemos decidido dar el paso más
+                        importante de nuestras vidas.
+                        Estamos felices de compartir este día tan especial con vosotros. Una celebración llena de amor,
+                        música y amigos.
+                    </p>
+                    <!-- Countdown Timer -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                        <div
+                            class="group flex flex-col items-center p-6 bg-background-light dark:bg-background-dark rounded-2xl border border-primary/5 hover:border-primary/20 transition-all">
+                            <span id="countdown-days" class="text-primary text-4xl font-extrabold mb-1">00</span>
+                            <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Días</span>
+                        </div>
+                        <div
+                            class="group flex flex-col items-center p-6 bg-background-light dark:bg-background-dark rounded-2xl border border-primary/5 hover:border-primary/20 transition-all">
+                            <span id="countdown-hours" class="text-primary text-4xl font-extrabold mb-1">00</span>
+                            <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Horas</span>
+                        </div>
+                        <div
+                            class="group flex flex-col items-center p-6 bg-background-light dark:bg-background-dark rounded-2xl border border-primary/5 hover:border-primary/20 transition-all">
+                            <span id="countdown-minutes" class="text-primary text-4xl font-extrabold mb-1">00</span>
+                            <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Minutos</span>
+                        </div>
+                        <div
+                            class="group flex flex-col items-center p-6 bg-background-light dark:bg-background-dark rounded-2xl border border-primary/5 hover:border-primary/20 transition-all">
+                            <span id="countdown-seconds" class="text-primary text-4xl font-extrabold mb-1">00</span>
+                            <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Parents and Godparents Section -->
+            <section class="py-24 bg-primary/5 dark:bg-slate-900/40 relative overflow-hidden">
+                <!-- Decorative background element -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+                    <div class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-10 right-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+                </div>
+
+                <div class="mx-auto max-w-7xl px-6 text-center relative z-10">
+                    <span class="text-primary text-sm font-bold uppercase tracking-widest mb-4 block">Con la bendición
+                        de</span>
+                    <h3 class="text-slate-900 dark:text-slate-100 text-3xl md:text-5xl font-black mb-16 tracking-tight">
+                        Nuestros Padres y Padrinos</h3>
+
+                    <div class="space-y-12">
+                        <!-- Parents Row -->
+                        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+                            <!-- Groom's Parents Card -->
+                            <div class="bg-primary p-10 rounded-3xl shadow-2xl shadow-primary/20 border border-white/10 hover:scale-[1.02] transition-all duration-500 group">
+                                <div class="mx-auto w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-white mb-8 group-hover:bg-white group-hover:text-primary transition-all duration-500">
+                                    <span class="material-symbols-outlined text-5xl">family_restroom</span>
+                                </div>
+                                <h4 class="text-white/70 text-xs font-black uppercase tracking-[0.2em] mb-6">Padres del Novio</h4>
+                                <div class="space-y-3">
+                                    <p class="text-2xl font-bold text-white">Manuel Rivera Gomez</p>
+                                    <p class="text-2xl font-bold text-white">Elena Sánchez Ruiz</p>
+                                </div>
+                            </div>
+
+                            <!-- Bride's Parents Card -->
+                            <div class="bg-primary p-10 rounded-3xl shadow-2xl shadow-primary/20 border border-white/10 hover:scale-[1.02] transition-all duration-500 group">
+                                <div class="mx-auto w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-white mb-8 group-hover:bg-white group-hover:text-primary transition-all duration-500">
+                                    <span class="material-symbols-outlined text-5xl">family_restroom</span>
+                                </div>
+                                <h4 class="text-white/70 text-xs font-black uppercase tracking-[0.2em] mb-6">Padres de la Novia</h4>
+                                <div class="space-y-3">
+                                    <p class="text-2xl font-bold text-white">Roberto Torres Mendoza</p>
+                                    <p class="text-2xl font-bold text-white">Silvia Lopez Vega</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Godparents Row (Centered) -->
+                        <div class="flex justify-center">
+                            <div class="bg-primary/90 p-10 rounded-3xl shadow-2xl shadow-primary/20 border border-white/10 hover:scale-[1.02] transition-all duration-500 group max-w-xl w-full">
+                                <div class="mx-auto w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-white mb-8 group-hover:bg-white group-hover:text-primary transition-all duration-500">
+                                    <span class="material-symbols-outlined text-5xl">auto_awesome</span>
+                                </div>
+                                <h4 class="text-white/70 text-xs font-black uppercase tracking-[0.2em] mb-6">Padrinos</h4>
+                                <div class="space-y-3">
+                                    <p class="text-2xl font-bold text-white">Francisco Javier Morales</p>
+                                    <p class="text-2xl font-bold text-white">Martha Elena Castro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-12">
+            <div class="mx-auto max-w-7xl px-6 flex flex-col items-center text-center">
+                <div class="text-primary mb-6">
+                    <span class="material-symbols-outlined text-4xl">favorite</span>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">Daniel &amp; Katia</h2>
+                <p class="text-slate-500 text-sm mb-8 italic">Creado con amor para compartir con los nuestros</p>
+                <div class="flex gap-6 mb-8 text-slate-400">
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">camera_enhance</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">mail</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+                <p class="text-slate-400 text-xs tracking-widest uppercase">© 2024 Daniel &amp; Katia. Todos los
+                    derechos reservados.</p>
+            </div>
+        </footer>
+        <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

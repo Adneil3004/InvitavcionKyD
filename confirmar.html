@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Confirmación de Asistencia - Ana &amp; Luis</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="/src/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div id="navbar-root"></div>
+<main class="flex flex-1 justify-center py-12 px-4 md:px-10">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+<!-- Hero Section for RSVP -->
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-8 shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent z-10"></div>
+<img alt="Decoración de boda elegante" class="w-full h-full object-cover" data-alt="Elegant wedding table setting with flowers and candles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV8YGKA-9UgvyhXeQ2CqvXeEgCRySnWcRdxXwnMUdtdq4oQ1zpgstolghfVeZrN4v4JQKNAxU9ex-b0isVLfvRJGdC88F_2SEI4daUuwKpGrW5hErZsXwkZIVzXkVfZ3dgRzTRl32JzkCS7xKhXJn2kbOWeT-il5QEjJXLk8j-nhX1uL9mV7N6LF6218p4JYmByb3HDAHV9vP6q0GxLlgyLXQ7D7c9P-uJUlHnswA1KMYWN4I8dh7ECfKRIx9Xo3sssodRX1ozj0wC"/>
+<div class="absolute bottom-6 left-6 z-20 text-white">
+<h1 class="text-3xl md:text-5xl font-black tracking-tight">Confirmación de Asistencia</h1>
+<p class="text-primary-light text-primary font-medium mt-2">Nos encantaría contar con tu presencia</p>
+</div>
+</div>
+<!-- Form Section -->
+<div class="bg-white dark:bg-slate-800/50 p-6 md:p-10 rounded-xl shadow-sm border border-primary/5">
+<div class="mb-8">
+<h2 class="text-2xl font-bold mb-2">Reserva tu lugar</h2>
+<p class="text-slate-600 dark:text-slate-400">Por favor, completa el siguiente formulario antes del <span class="font-bold text-primary">30 de septiembre</span> para ayudarnos con la organización.</p>
+</div>
+<form class="flex flex-col gap-6">
+<!-- Full Name -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">person</span>
+                                Nombre Completo
+                            </label>
+<input class="form-input w-full rounded-lg border-primary/20 bg-background-light dark:bg-slate-900 focus:border-primary focus:ring-primary transition-all p-3.5" placeholder="Introduce tu nombre y apellidos" type="text"/>
+</div>
+<!-- Attendance Toggle -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">celebration</span>
+                                ¿Podrás acompañarnos?
+                            </label>
+<div class="flex h-12 w-full items-center justify-center rounded-lg bg-primary/10 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-4 transition-all has-[:checked]:bg-primary has-[:checked]:text-white text-slate-600 dark:text-slate-300 font-bold text-sm">
+<span>Sí, asistiré</span>
+<input checked="" class="hidden" name="attendance" type="radio"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-4 transition-all has-[:checked]:bg-primary has-[:checked]:text-white text-slate-600 dark:text-slate-300 font-bold text-sm">
+<span>No podré asistir</span>
+<input class="hidden" name="attendance" type="radio"/>
+</label>
+</div>
+</div>
+<!-- Companions & Dietary Needs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">groups</span>
+                                    Número de acompañantes
+                                </label>
+<select class="form-select w-full rounded-lg border-primary/20 bg-background-light dark:bg-slate-900 focus:border-primary focus:ring-primary transition-all p-3.5">
+<option>Vengo solo/a</option>
+<option>+1 Acompañante</option>
+<option>+2 Acompañantes</option>
+<option>Familia (3+)</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">restaurant</span>
+                                    Alergias o necesidades
+                                </label>
+<input class="form-input w-full rounded-lg border-primary/20 bg-background-light dark:bg-slate-900 focus:border-primary focus:ring-primary transition-all p-3.5" placeholder="Ej: Celíaco, Vegano, Alergia frutos secos" type="text"/>
+</div>
+</div>
+<!-- Additional Comments -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">chat_bubble</span>
+                                ¿Algún mensaje para nosotros?
+                            </label>
+<textarea class="form-textarea w-full rounded-lg border-primary/20 bg-background-light dark:bg-slate-900 focus:border-primary focus:ring-primary transition-all p-3.5 resize-none" placeholder="¡Estamos deseando veros!" rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="mt-4 flex items-center justify-center gap-3 w-full md:w-auto md:self-end px-10 py-4 bg-primary text-white font-black text-lg rounded-xl shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1 active:scale-95" type="submit">
+<span class="material-symbols-outlined">send</span>
+                            Enviar confirmación
+                        </button>
+</form>
+</div>
+<!-- Footer Info -->
+<div class="mt-12 text-center border-t border-primary/10 pt-8">
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Ubicación del evento</p>
+<div class="flex flex-col items-center gap-2">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined">location_on</span>
+                            Finca El Olivar, Madrid
+                        </div>
+<div class="w-full h-48 rounded-xl overflow-hidden mt-4 grayscale hover:grayscale-0 transition-all">
+<img alt="Mapa ubicación" class="w-full h-full object-cover" data-alt="Map showing wedding venue location in Madrid" data-location="Madrid, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_qajEzDMbYc4uotI-ZuyHNy5ez1-512yxTSAkV5hWve9Z7APNEXtKM3nBvyu9IAmuvf2EqfLT3j7TngP0Z7TskxTOV2p5YbRFoVEY5RRP-le5q17uAl1fDJPhJLbs6Q3wu2WF9IIzVi3ZtBCZpRNWvAZpmDXidTkmh8hBAaQGyJW-jYyZJ8k09aSE_a2-e108QdcUJ3hDp5m4AaTMeF2YPb_9sl5pRQKOcz9CjFNpOkLTtY7AhG1cRMa86_unFWvAxb1iNhhNoU-_"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-10 text-center text-slate-400 text-xs">
+            © 2024 Ana &amp; Luis. Hecho con ❤️ para nuestro gran día.
+        </footer>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
